@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>郭欢欢的个人空间 - 作业展示</title>
+    <title>我的个人空间 - 作业展示</title>
     <style>
         /* ================= 基础重置与全局样式 ================= */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -257,7 +257,7 @@
         <div class="profile-card">
             <div class="avatar"></div>
             <div class="user-info">
-                <h1>✨ 我的个人空间</h1>
+                <h1>✨ 郭欢欢的个人空间</h1>
                 <p>个性签名：代码改变世界，作业点亮人生 | 欢迎来到我的作业展览馆</p>
             </div>
             <div class="profile-actions">
@@ -270,14 +270,14 @@
     <!-- 作业展示区 -->
     <main class="container">
         <div class="section-title">
-            📚 我的优秀作业
+            📚 我的作业
         </div>
 
         <div class="homework-grid">
             <!-- 作业 1 -->
             <div class="hw-card">
                 <div class="hw-header">
-                    <h3>作业一：看这里</h3>
+                    <h3>作业一：</h3>
                     <span>HTML/CSS 实践</span>
                 </div>
                 <div class="hw-body">
@@ -285,11 +285,10 @@
                     <div class="upload-zone" id="zone1" onclick="triggerUpload('input1')" ondragover="handleDragOver(event, 'zone1')" ondragleave="handleDragLeave(event, 'zone1')" ondrop="handleDrop(event, 'input1', 'zone1')">
                         <input type="file" id="input1" class="file-input" accept="image/*,.pdf,.doc,.docx,.zip,.rar" onchange="handleFileSelect(this, 'zone1')">
                         <div class="upload-placeholder">
-                            <div class="upload-icon">📤</div>
-                            < img src="1.jpg" alt="这是我的作业截图" width="600">
-                            <div class="upload-text">点击或拖拽<strong>上传图片/文件</strong></div>
-                            <div class="upload-text" style="font-size:12px; margin-top:5px;"></div>
-                        </div>
+                       <!-- 把图片放在最上面，去掉宽度限制，让它自适应卡片大小 -->
+                     < img src="1.jpg"alt="这是我的作业截图" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+                     <div class="upload-text">点击或拖拽<strong>上传图片/文件</strong></div>
+                  </div>
                         <div class="preview-container" id="preview1"></div>
                     </div>
                 </div>
