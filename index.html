@@ -283,9 +283,10 @@
                 <div class="hw-body">
             <p class="hw-desc">大欢，看这里，这是AI生成的网页，哈哈O(∩_∩)O</p >
             <!-- 直接用包裹图片的链接替换掉复杂的上传框 -->
-              <a href=" " target="_blank" style="display: block; text-align: center; margin-top: 15px;">
-            <img src="1.jpg" alt="这是我的作业截图" style="max-width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
-              </a >
+              <!-- 把图片放在最上面，用 <a> 包住 <img> -->
+              <a href=" " target="_blank" style="display: block; margin-bottom: 10px;">
+                <img src="1.jpg" alt="这是我的作业截图" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; cursor: pointer; display: block; margin: 0 auto;">
+               </a >
              </div>
                         <div class="preview-container" id="preview1"></div>
                     </div>
@@ -343,7 +344,7 @@
     <script>
         // ================= 点赞功能 =================
         let isLiked = false;
-        let likeCount = 128;
+        let likeCount = 999;
 
         function toggleLike() {
             const btn = document.getElementById('likeBtn');
